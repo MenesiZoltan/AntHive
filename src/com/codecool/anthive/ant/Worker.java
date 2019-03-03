@@ -18,9 +18,6 @@ public class Worker extends Ant{
         if (abs(getxCoordinate()) != MAXDISTANCEFROMQUEEN && abs(getyCoordinate()) != MAXDISTANCEFROMQUEEN) {
             Random rand = new Random();
             int direction = rand.nextInt(4);
-            System.out.println("Direction roll");
-            System.out.println(direction);
-            System.out.println("");
             if (direction == 0) {
                 setxCoordinate(1);
             } else if ( direction == 1) {

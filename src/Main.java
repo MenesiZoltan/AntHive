@@ -10,6 +10,10 @@ public class Main {
         Hive hive = new Hive();
 
 
+        for (int e = 0; e < 200; e++) {
+            hive.startStepCycle();
+        }
+
 
         /*This is the entry point*/
         /*Hive will be created here.*/

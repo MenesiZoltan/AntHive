@@ -37,10 +37,15 @@ public class Hive {
     }
 
     public void startStepCycle() {
-        /*check hornet spawn*/
-        /*check queen status (is mating, want to mate)*/
-        /*access all 3 lists of ants and call their step cycle*/
-        /*repeat x types*/
+        queen.stepOne();
+        for (Drone drone : drones) {
+            drone.stepOne();
+        }
+
+        for (Worker worker : workers) {
+            worker.stepOne();
+        }
+
     }
 
 }

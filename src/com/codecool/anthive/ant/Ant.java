@@ -36,6 +36,11 @@ abstract class Ant {
 
     }
 
+    protected void setStartingPosition(int xCoor, int yCoor) {
+        this.xCoordinate = xCoor;
+        this.yCoordinate = yCoor;
+    }
+
     protected void stepsFromQueen() {
         this.distanceFromQueen = abs(xCoordinate) + abs(yCoordinate);
     }
